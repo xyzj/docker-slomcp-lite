@@ -3,10 +3,6 @@ MAINTAINER      X.Minamoto "xuyuan8720@189.cn"
 
 ENV 			DEBIAN_FRONTEND noninteractive
 
-COPY			buildfiles /root/
-
-EXPOSE		10000-10020
-
 RUN			/bin/echo 'root:administratorishere' |chpasswd;useradd xy;/bin/echo 'xy:iamlegal' |chpasswd; \
 	/usr/bin/apt-get -y update; \
 	/usr/bin/apt-get -y full-upgrade; \
@@ -27,6 +23,7 @@ RUN			/bin/echo 'root:administratorishere' |chpasswd;useradd xy;/bin/echo 'xy:ia
 	/bin/echo 'export PATH=$PATH:/root/svr/bin'>> /root/.bashrc; \
 	chown -R root:root /root
 
+COPY	buildfiles /root/
 # CMD			/usr/sbin/sshd -D
 
 ENTRYPOINT	["/root/svr/bin/run.sh"]
