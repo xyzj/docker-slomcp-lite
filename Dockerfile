@@ -1,12 +1,12 @@
 FROM ubuntu:latest
 MAINTAINER      X.Minamoto "xuyuan8720@189.cn"
 
-ENV 			DEBIAN_FRONTEND noninteractive
+ENV		DEBIAN_FRONTEND noninteractive
 
-RUN			/bin/echo 'root:administratorishere' |chpasswd;useradd xy;/bin/echo 'xy:iamlegal' |chpasswd; \
+RUN		/bin/echo 'root:administratorishere' |chpasswd;useradd xy;/bin/echo 'xy:iamlegal' |chpasswd; \
 	/usr/bin/apt-get -y update; \
 	/usr/bin/apt-get -y full-upgrade; \
-	/usr/bin/apt-get -y install apt-utils; \
+	/usr/bin/apt-get -y install apt-utils software-properties-common; \
 	/usr/bin/apt-get -y autoremove; \
 	/usr/bin/apt-get -y install net-tools nano tzdata ssh; \
 	/usr/bin/apt-get -y clean; \
