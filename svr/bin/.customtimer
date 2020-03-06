@@ -1,0 +1,48 @@
+#unit ms
+wlst-com-3e04=500
+
+#unit ms
+wlst-com-3e05=500
+
+#unit ms
+wlst-com-3e09=500
+
+#unit ms
+wlst-rtu-3100=10000
+
+#unit ms
+wlst-rtu-3200=5000
+
+#unit ms
+wlst-rtu-4600=10000
+
+#unit ms
+wlst-rtu-4700=5000
+
+#unit ms
+wlst-rtu-4c00=5000
+
+#unit ms
+wlst-rtu-5800=10000
+
+#unit ms
+wlst-rtu-5900=5000
+
+#unit ms
+wlst-rtu-5a00=5000
+
+#unit ms
+wlst-rtu-5f00=5000
+
+#unit ms
+wlst-rtu-6500=5000
+
+#unit ms
+wlst-rtu-6600=5000
+
+#unit ms
+wlst-rtu-6800=10000
+
+#unit ms
+wlst-rtu-6900=5000
+
